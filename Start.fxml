@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.input.* ?>
+
+<BorderPane fx:controller="StartController" style="-fx-background-color: #ddffff" prefWidth="550" prefHeight="400" xmlns:fx="http://javafx.com/fxml"
+      onKeyPressed="#keyAction">
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10"/>
+  </padding>
+  
+  <center>
+    <StackPane>
+      <Label text="T y p i n g   G a m e" style="-fx-font-size: 30"/>
+      <GridPane style="-fx-background-color: white" fx:id="optGrid" alignment="center" vgap="5">
+        <Label text="*オプション*" GridPane.rowIndex="0"/>
+        <GridPane GridPane.rowIndex="2" vgap="5">
+          <CheckBox fx:id="ignoreCheck" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#ignoreCheckAction" />
+          <Label text="大文字・小文字を区別しない(A==a)" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+          <CheckBox fx:id="soundCheck" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#soundCheckAction" />
+          <Label text="サウンド ON" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        </GridPane>
+      </GridPane>
+    </StackPane>
+  </center>
+  <bottom>
+    <GridPane BorderPane.alignment="CENTER" prefWidth="50" alignment="center" hgap="10" vgap="10">
+    <VBox GridPane.rowIndex="0" alignment="center" spacing="7">
+      <Button text="   m o d e 0   " onAction="#mode0ButtonAction"/>
+      <Button text="   m o d e 1   " onAction="#mode1ButtonAction"/>
+      <Button text="   m o d e 2   " onAction="#mode2ButtonAction"/>
+    </VBox>
+    <HBox GridPane.rowIndex="1" alignment="center" spacing="5">
+      <Button text="score" alignment="center" onAction="#scoreButtonAction"/>
+      <Button text="option" alignment="center" onAction="#optionButtonAction"/>
+      <Button text="notepad" alignment="center" onAction="#noteButtonAction"/>
+    </HBox>
+<!--
+    <HBox GridPane.rowIndex="2" alignment="center">
+
+    </HBox>
+-->
+    </GridPane>
+  </bottom>
+</BorderPane>

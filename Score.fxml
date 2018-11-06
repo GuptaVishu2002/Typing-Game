@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane fx:controller="ScoreController" prefWidth="670" prefHeight="540" xmlns:fx="http://javafx.com/fxml" alignment="center">
+  <children>
+    <Button text="Score" GridPane.rowIndex="5" prefWidth="100" onAction="#handleButtonAction" />
+    <Button text="return" GridPane.rowIndex="6" prefWidth="100" onAction="#returnButtonAction"/>
+    <Label fx:id="textlabel1" text = "先ほどのスコアを送信する場合はスコアボタンを押してください" GridPane.rowIndex="0" style="-fx-font-size: 20"/>
+    <Label fx:id="textlabel2" GridPane.rowIndex="1" style="-fx-font-size: 20"/>
+    <Label fx:id="textlabel3" GridPane.rowIndex="2" style="-fx-font-size: 20"/>
+    <Label fx:id="textlabel4" GridPane.rowIndex="3" style="-fx-font-size: 20"/>
+    <Label fx:id="textlabel5" GridPane.rowIndex="4" style="-fx-font-size: 20"/>
+
+
+  </children>
+</GridPane>

@@ -1,0 +1,41 @@
+Simple Mail Transfer Protocol
+Domain Name System
+Hyper Text Markup Language
+Post Office Protocol 3
+Transmission Control Protocol
+Internet Protocol
+Hyper Text Transfer Protocol
+pop before smtp
+Network Time Protocol
+File Transear Protocol
+Secure Shell
+Cookie
+SMTP-AUTH
+Simple Network Management Protocol
+3-way handshake
+Internet Message Access Protocol
+Uniform Resource Locator
+User Datagram Protocol
+Advanced Encryption Standard
+Secure Socket Layer
+Transport Layer Secure
+Open Shortest Path First
+Routing Information Protocol
+Dynamic Routing
+Address Resolution Protocol
+Boarder Gateway Protocol
+Internet eXchange point
+Open Systems Interconnection
+Local Area Network
+Wide Area Network
+bit per second
+Fully Qualified Domain Name
+top-level domain
+eXtensible Markup Language
+Network News Transfer Protocol
+well-known ports
+TCP/IP
+IEEE 802.11
+Dynamic Host Configuration Protocol
+CSMA/CA
+Ethernet

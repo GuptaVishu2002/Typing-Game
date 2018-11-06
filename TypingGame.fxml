@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.input.* ?>
+<?import javafx.scene.text.Text ?>
+<?import javafx.scene.text.TextFlow ?>
+
+<VBox fx:controller="TypingGameController" alignment="CENTER" prefWidth="550" prefHeight="400" xmlns:fx="http://javafx.com/fxml"
+      onKeyPressed="#keyAction" onKeyReleased="#keyReleasedAction">
+
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10"/>
+  </padding>
+  <children>
+<!--
+注意
+現在の仕様では、
+ボタンを配置する場合は、(Controllerクラスかどこかで)何らかの対策をする必要があります。。
+-->
+<!--スタイル例
+style="-fx-background-color: #ddffff; -fx-font-size: 15; -fx-font-fill: RED"
+-->
+
+      <Label fx:id="timerLabel" alignment="center" style="-fx-font-size: 20"/>
+
+      <VBox prefWidth="50" prefHeight="50"/>
+
+
+      <GridPane fx:id="TypingGrid" alignment="CENTER" vgap="5">
+<!--
+        <Label fx:id="wordLabel" GridPane.rowIndex="0" style="-fx-font-size: 22"  alignment="CENTER" />
+-->
+<!--
+        <HBox GridPane.rowIndex="3" alignment="CENTER" style="-fx-font-size: 17">
+          <Text fx:id="headToCurText"/>
+          <Text fx:id="curStrText" style="-fx-text-fill: WHITE; -fx-background-color: #dd0000"/>
+          <Text fx:id="curToTailText"/>
+        </HBox>
+-->
+
+        <VBox prefWidth="50" prefHeight="10" GridPane.rowIndex="1"/>
+
+        <TextFlow fx:id="inputText" GridPane.rowIndex="2"/>
+
+        <VBox prefWidth="5" />
+
+      </GridPane>
+
+      <VBox prefWidth="50" prefHeight="50"/>
+
+      <Label fx:id="resultLabel" alignment="center" style="-fx-font-size: 17"/>
+
+      <VBox prefWidth="50" prefHeight="60"/>
+
+      <VBox spacing="7" alignment="center">
+        <Label fx:id="messageLabel" text="Spaceキーで、開始します。"/>
+        <Label text="Escキーで、トップに戻ります。"/>
+      </VBox>
+
+  </children>
+</VBox>

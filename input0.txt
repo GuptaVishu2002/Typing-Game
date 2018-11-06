@@ -1,0 +1,25 @@
+ArrayStoreException
+ArthmeticException
+ArrayIndexOutOfBoundsException
+ClassCastException
+ClassNotFoundException
+FileNotFoundException
+IllegalAccessException
+IllegalArgumentException
+InterruptedException
+IOException
+NegativeArraySizeException
+NoSuchMethodException
+NoSuchFieldException
+NullPointerException
+NumberFormatException
+RuntimeException
+StackOverflowException
+StringIndexOutOfBoundsException
+UnknownHostException
+UnsupportedOperationException
+InvocationTargetException
+try and catch
+StackTrace
+Throwable cause
+String message
